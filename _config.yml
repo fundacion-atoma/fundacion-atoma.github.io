@@ -1,0 +1,11 @@
+title: Fundación Atóma
+email: fundacionatoma@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Tecnología con propósito humano
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fundacion-atoma.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: fundacion-atoma
+github_username:  fundacion-atoma
+
+markdown: kramdown
+theme: null
