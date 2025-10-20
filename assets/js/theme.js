@@ -2,12 +2,16 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        "brand-blue": "#55efc4", // Green Darner Tail
-        "brand-violet": "#a29bfe", // Shy Moment
-        "brand-dark-blue": "#2d3436", // Dracula Orchid
+        "brand-primary": "#340C6D",
+        "brand-secondary": "#B8AE29",
+        "brand-secondary-accent": "#F2E852",
+        "brand-accent": "#B88CF7",
+        "brand-support": "#9552F2",
+        "brand-dark-blue": "#2d3436",
         "brand-light-gray": "#f9fafb",
-        "brand-secondary-blue": "#0984e3", // Electron Blue
-        "brand-text-dark": "#636e72", // American River
+        "brand-secondary-blue": "#0984e3",
+        "brand-text-dark": "#636e72",
+        "brand-light-gray": "#f9fafb",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

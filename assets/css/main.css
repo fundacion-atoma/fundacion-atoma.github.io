@@ -26,7 +26,7 @@ body {
   font-family: 'Didact Gothic', sans-serif;
 }
 
-.wave-separator {
+/* .wave-separator {
   position: relative;
   background: var(--wave-bg);
   color: var(--wave-text);
@@ -51,9 +51,9 @@ body {
 
 .wave-separator-violet::before {
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 80H1440V0C1196.5 53.3333 711 80 0 0V80Z" fill="%23a29bfe"/></svg>');
-}
+} */
 
-.wave-top::before {
+/* .wave-top::before {
   content: '';
   position: absolute;
   top: 0;
@@ -91,4 +91,4 @@ body {
 
 .wave-bottom-dark::after {
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 80H1440V0C1196.5 53.3333 711 80 0 0V80Z" fill="%232d3436"/></svg>');
-}
+} */
