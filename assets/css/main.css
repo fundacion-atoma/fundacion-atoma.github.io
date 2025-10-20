@@ -1,3 +1,16 @@
+:root {
+  /* Brand Colors from theme.js */
+  --brand-primary: #340C6D;
+  --brand-secondary: #B8AE29;
+  --brand-secondary-accent: #F2E852;
+  --brand-accent: #B88CF7;
+  --brand-support: #9552F2;
+  --brand-dark-blue: #1e293b;
+  --brand-light-gray: #f9fafb;
+  --brand-secondary-blue: #0984e3;
+  --brand-text-dark: #636e72;
+}
+
 @font-face {
   font-family: 'Didact Gothic';
   src: url('../fonts/DidactGothic-Regular.ttf') format('truetype');
@@ -107,6 +120,8 @@ body {
   line-height: 2.5rem;
   font-weight: 700;
   margin: 0 0 0.75rem;
+  color: var(--brand-primary); /* Using brand primary color */
+  text-align: center;
 }
 @media (min-width: 768px) {
   .markdown-container h1 {
@@ -117,6 +132,7 @@ body {
 
 .markdown-container h2 {
   font-family: var(--body-font, sora);
+  color: var(--brand-secondary); /* Using brand primary color */
   font-size: 1.875rem;       /* text-3xl */
   line-height: 2.25rem;
   font-weight: 700;
