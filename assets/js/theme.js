@@ -14,8 +14,13 @@ tailwind.config = {
         "brand-light-gray": "#f9fafb",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
+        didact: ["Didact Gothic", "sans-serif"],
+        sora: ["Sora", "sans-serif"],
+      },
+      fontWeight: {
+        normal: 400,
+        bold: 700,
+        semibold: 600,
       },
     },
   },
