@@ -1,0 +1,82 @@
+// Mobile Menu Toggle Function
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const hamburger = document.getElementById('menu-icon');
+  const close = document.getElementById('close-icon');
+
+  const isOpen = menu.classList.contains('opacity-100');
+
+  if (isOpen) {
+    menu.classList.remove('opacity-100', 'translate-y-0');
+    menu.classList.add('opacity-0', '-translate-y-full');
+    hamburger.classList.remove('hidden');
+    close.classList.add('hidden');
+  } else {
+    menu.classList.remove('opacity-0', '-translate-y-full');
+    menu.classList.add('opacity-100', 'translate-y-0');
+    hamburger.classList.add('hidden');
+    close.classList.remove('hidden');
+  }
+}
+
+// Initialize Mobile Menu
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.getElementById('mobile-menu-button');
+
+  if (button) {
+    const newButton = document.createElement('button');
+    newButton.innerHTML = button.innerHTML;
+    newButton.id = 'mobile-menu-button';
+    newButton.className = button.className;
+    newButton.style.cssText = `
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: none !important;
+`;
+
+    newButton.onclick = function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      toggleMenu();
+      return false;
+    };
+
+    newButton.addEventListener('mouseenter', function (e) {
+      e.stopPropagation();
+    });
+
+    newButton.addEventListener('mouseleave', function (e) {
+      e.stopPropagation();
+    });
+
+    newButton.addEventListener('mousedown', function (e) {
+      e.stopPropagation();
+    });
+
+    newButton.addEventListener('mouseup', function (e) {
+      e.stopPropagation();
+    });
+
+    newButton.addEventListener('scroll', function (e) {
+      e.stopPropagation();
+    });
+
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('mobile-menu');
+      const isMenuOpen = menu && menu.classList.contains('opacity-100');
+
+      if (isMenuOpen && !newButton.contains(e.target) && !menu.contains(e.target)) {
+        toggleMenu();
+      }
+    });
+
+    document.addEventListener('scroll', function (e) {
+      // Do nothing - let scroll work normally without closing menu
+    });
+
+    button.parentNode.replaceChild(newButton, button);
+  }
+});
