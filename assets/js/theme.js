@@ -7,7 +7,7 @@ tailwind.config = {
         "brand-secondary-accent": "#F2E852",
         "brand-accent": "#B88CF7",
         "brand-support": "#9552F2",
-        "brand-dark-blue": "#2d3436",
+        "brand-dark-blue": "#1e293b",
         "brand-light-gray": "#f9fafb",
         "brand-secondary-blue": "#0984e3",
         "brand-text-dark": "#636e72",
