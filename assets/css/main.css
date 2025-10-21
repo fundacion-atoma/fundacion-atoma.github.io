@@ -294,3 +294,12 @@ material-symbols-outlined {
     'GRAD' 0,
     'opsz' 24
 }
+
+
+.carousel-item {
+    display: none;
+  }
+
+  .carousel-item.active {
+    display: block;
+  }
