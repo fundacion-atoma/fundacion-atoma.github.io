@@ -53,11 +53,13 @@ title: Contacto - Fundación Átoma
           </div> -->
         </div>
       </div>
-      <!-- <div class="bg-white p-8 md:p-12 rounded-lg shadow-sm">
+      <div class="bg-white p-8 md:p-12 rounded-lg shadow-sm">
         <h2 class="text-2xl font-bold text-brand-secondary font-sora mb-6">Envíanos un Mensaje</h2>
-        <form action="#" class="space-y-6" method="POST">
+        <form action="https://api.web3forms.com/submit" class="space-y-6" method="POST">
+          <input type="hidden" name="access_key" value="462ea8e8-ed27-4c61-a24b-4e285e7aa217">
+          <input type="hidden" name="redirect" value="https://fundacionatoma.org/ok">
           <div>
-            <label class="block text-sm font-medium text-slate-700" for="name">Nombre Completo</label>
+            <label class="block text-sm font-medium text-slate-700" for="name">Nombre</label>
             <input autocomplete="name"
               class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm"
               id="name" name="name" type="text" />
@@ -69,11 +71,18 @@ title: Contacto - Fundación Átoma
               id="email" name="email" type="email" />
           </div>
           <div>
-            <label class="block text-sm font-medium text-slate-700" for="message">Mensaje</label>
+            <label class="block text-sm font-medium text-slate-700" for="phone">Teléfono</label>
+            <input autocomplete="phone"
+              class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm"
+              id="phone" name="phone" type="tel" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700" for="message">¿En qué podemos colaborar?</label>
             <textarea
               class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm"
               id="message" name="message" rows="4"></textarea>
           </div>
+          <div class="h-captcha" data-captcha="true"></div>
           <div>
             <button
               class="w-full bg-brand-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
@@ -82,7 +91,7 @@ title: Contacto - Fundación Átoma
             </button>
           </div>
         </form>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>
